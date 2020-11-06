@@ -1,0 +1,592 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+  font-style: normal;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1;
+}
+ul,
+ol,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: normal;
+}
+input,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+input[type="button"],
+input[type="submit"],
+label,
+button,
+a {
+  cursor: pointer;
+}
+img {
+  display: block;
+}
+
+body {
+  background: #fff !important;
+}
+/* Custom Class*/
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.ellipsis {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Layout */
+#wrap {
+  width: 100%;
+  min-width: 320px;
+}
+/* Global */
+.inner {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+}
+.inner:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+section {
+  position: relative;
+}
+
+/* Main nav */
+::-moz-selection {
+  background: #d9b4a7;
+  text-shadow: none;
+}
+
+::selection {
+  background: #d9b4a7;
+  text-shadow: none;
+}
+
+#mainNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(17, 17, 17, 0.8);
+}
+#mainNav .navbar-toggler {
+  padding: 0.75rem;
+  font-size: 0.75rem;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0;
+}
+#mainNav .navbar-brand {
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0.0625em;
+}
+#mainNav {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border: none;
+  background-color: rgba(17, 17, 17, 0.8);
+  transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+}
+#mainNav .navbar-brand {
+  font-size: 1.5em;
+  transition: font-size 0.3s ease-in-out;
+}
+#mainNav .navbar-brand img {
+  height: 2rem;
+  transition: height 0.3s ease-in-out;
+}
+#mainNav.navbar-shrink {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #111;
+}
+
+#mainNav .navbar-brand img {
+  height: 1.5rem;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 0.95rem;
+  color: #fff;
+  letter-spacing: 0.0625em;
+}
+#mainNav .navbar-nav .nav-item .nav-link.active,
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+  text-decoration: underline;
+}
+
+#main_visual ul .visual_01 {
+  position: relative;
+  float: left;
+  height: 900px;
+  max-width: 100%;
+  background: url("../images/jomalone/jo-main-1.jpg") 50% 50% no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#main_visual ul .visual_02 {
+  position: relative;
+  float: left;
+  height: 900px;
+  max-width: 100%;
+  background: url("../images/jomalone/jo-main-2.jpg") 50% 50% no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+#main_visual ul .visual_03 {
+  position: relative;
+  float: left;
+  height: 900px;
+  max-width: 100%;
+  background: url("../images/jomalone/jo-main-3.jpg") 50% 50% no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+#main_visual ul .txt {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.35);
+}
+#main_visual ul .txt .txt_01 {
+  font-family: "PT Sans", sans-serif;
+  display: block;
+  color: #fff;
+
+  font-size: 68px;
+  font-weight: 700;
+}
+#main_visual ul .txt .txt_02 {
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  margin-top: 0.5%;
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+}
+#main_visual a[href="#main_top"] {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+#main_visual a span {
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+  border-bottom: solid 1px #fff;
+}
+
+/* main nav */
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #fbe9c9;
+}
+
+header nav {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+header nav ul {
+  display: inline-block;
+}
+header nav ul li {
+  float: left;
+  margin-right: 40px;
+}
+header nav ul li.on a {
+  color: #703938;
+  font-weight: 800;
+}
+header nav ul li:last-child {
+  margin-right: 0px;
+}
+header nav ul li a {
+  display: block;
+  height: 100px;
+  color: #182524;
+  line-height: 100px;
+  font-family: "Noto Serif", serif;
+}
+header nav ul li a:hover {
+  color: #703938;
+  font-weight: 800;
+  transition: all 0.3s;
+}
+
+.page-section {
+  padding-top: 49.5em;
+}
+
+/* Product */
+#product {
+  margin: 80px auto 160px;
+}
+#product .product_tab {
+  position: relative;
+  padding-top: 40px;
+  max-width: 100%;
+}
+#product .product_tab .prod_list {
+  width: 100%;
+  text-align: center;
+}
+#product .product_tab .prod_list label {
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, 0);
+  font-size: 16px;
+}
+#product .product_tab .prod_list label span {
+  color: #888;
+  border-bottom: 0;
+}
+#product .product_tab .prod_list input:checked + label span {
+  color: #000;
+  border-bottom: 1px solid #444;
+}
+#product .product_tab .prod_list:nth-child(1) label {
+  left: 35%;
+}
+#product .product_tab .prod_list:nth-child(2) label {
+  left: 50%;
+}
+#product .product_tab .prod_list:nth-child(3) label {
+  left: 65%;
+}
+#product .product_tab .prod_list {
+  margin-top: 4px;
+}
+#product .product_tab .prod_list input {
+  display: none;
+}
+#product .product_tab .prod_list ul {
+  display: none;
+}
+#product .product_tab .prod_list input:checked ~ ul {
+  display: block;
+}
+
+#product .product_tab .prod_list ul li {
+  float: left;
+  width: 33.333%;
+}
+
+#product .product_tab .prod_list ul li .productImage {
+  display: inline-block;
+  width: 100%;
+  height: 400px;
+  background: url("../images/jomalone/jo-perfume-4.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#product .product_tab .prod_list ul.tab_01 li:nth-of-type(2) .productImage {
+  background-image: url("../images/jomalone/jo-perfume-3.jpg");
+}
+
+#product .product_tab .prod_list ul.tab_01 li:nth-of-type(3) .productImage {
+  background-image: url("../images/jomalone/jo-perfume-5.jpg");
+}
+#product .product_tab .prod_list ul.tab_01 li:nth-of-type(4) .productImage {
+  background-image: url("../images/jomalone/jo-perfume-2.jpg");
+}
+#product .product_tab .prod_list ul.tab_01 li:nth-of-type(5) .productImage {
+  background-image: url("../images/jomalone/jo-perfume-5.jpg");
+}
+#product .product_tab .prod_list ul.tab_01 li:nth-of-type(5) .productImage {
+  background-image: url("../images/jomalone/jo-perfume-1.jpeg");
+}
+
+/* tab 2 */
+#product .product_tab .prod_list ul.tab_02 li:nth-of-type(1) .productImage {
+  background-image: url("../images/jomalone/jo-diffuser-1.jpg");
+}
+#product .product_tab .prod_list ul.tab_02 li:nth-of-type(2) .productImage {
+  background-image: url("../images/jomalone/jo-diffuser-3.jpg");
+}
+
+/* tab 3 */
+#product .product_tab .prod_list ul.tab_03 li:nth-of-type(1) .productImage {
+  background-image: url("../images/jomalone/jo-others-1.jpg");
+}
+#product .product_tab .prod_list ul.tab_03 li:nth-of-type(2) .productImage {
+  background-image: url("../images/jomalone/jo-others-2.jpeg");
+}
+
+#product .product_tab .prod_list .txt {
+  display: block;
+  padding-bottom: 3px;
+  color: #444;
+  font-size: 16px;
+  text-align: center;
+}
+#product .product_tab .prod_list .slogan {
+  display: block;
+  color: #888;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Content */
+#contents {
+  margin: 0 auto 1px;
+}
+#contents .txt {
+  display: block;
+  position: absolute;
+  top: 39%;
+  width: 100%;
+  padding-bottom: 10px;
+  color: #ebe1d3;
+  font-size: 18px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+#contents .slogan {
+  display: block;
+  position: absolute;
+  top: 53%;
+  width: 100%;
+  line-height: 36px;
+  color: #fff;
+  font-size: 25px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+#contents .item01 {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: 50%;
+}
+
+#contents .item01:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #fff;
+}
+
+#contents .item01 a .bgImage {
+  width: 100%;
+  transition: all 2.5s;
+}
+#contents .item01 a:hover .bgImage {
+  transform: scale(1.2);
+}
+
+#contents .item01 a .bgImage {
+  display: inline-block;
+  width: 100%;
+  height: 400px;
+  background: url("../images/jomalone/jo-content-1.gif") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#contents .itemWrap {
+  float: left;
+  width: 50%;
+}
+#contents .itemWrap .item03 {
+  position: relative;
+  overflow: hidden;
+  height: 50%;
+}
+#contents .itemWrap .item03:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #fff;
+}
+
+#contents .itemWrap a .bgImage {
+  display: inline-block;
+  width: 100%;
+  height: 200px;
+  background: url("../images/jomalone/jo-content-2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#contents .itemWrap .item03 a .bgImage {
+  width: 100%;
+  transition: all 2.5s;
+}
+#contents .itemWrap .item03 a:hover .bgImage {
+  transform: scale(1.2);
+}
+#contents .itemWrap .item04 {
+  position: relative;
+  overflow: hidden;
+  height: 50%;
+}
+
+#contents .itemWrap .item04 a .bgImage {
+  display: inline-block;
+  width: 100%;
+  height: 200px;
+  background: url("../images/jomalone/jo-content-4.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#contents .itemWrap .item04 a .bgImage {
+  width: 100%;
+  transition: all 2.5s;
+}
+#contents .itemWrap .item04 a:hover .bgImage {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 1024px) {
+  #product .product_tab .prod_list .txt {
+    padding: 0 10px;
+    height: 30px;
+  }
+  #product .product_tab .prod_list .slogan {
+    padding: 0 10px;
+    height: 24px;
+  }
+
+  #contents .txt {
+    font-size: 1px;
+  }
+  #contents .slogan {
+    font-size: 22px;
+  }
+}
+
+/* media screen 992px */
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border: none;
+    background-color: rgba(17, 17, 17, 0.8);
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.5em;
+    transition: font-size 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand img {
+    height: 2rem;
+    transition: height 0.3s ease-in-out;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #111;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+  }
+  #mainNav.navbar-shrink .navbar-brand svg,
+  #mainNav.navbar-shrink .navbar-brand img {
+    height: 1.5rem;
+  }
+  #mainNav .navbar-nav .nav-item {
+    margin-right: 1rem;
+  }
+  #mainNav .navbar-nav .nav-item:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #contents .item01 {
+    width: 100%;
+  }
+  #contents .item01:after {
+    top: auto;
+    left: 0;
+    width: 100%;
+    height: 1px;
+  }
+  #contents .itemWrap {
+    width: 100%;
+  }
+  #contents .itemWrap .item03 a .bgImage {
+    height: 400px;
+  }
+  #contents .itemWrap .item04 a .bgImage {
+    height: 400px;
+  }
+
+  #contents .slogan {
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #product {
+    margin-bottom: 80px;
+  }
+  #product .product_tab .prod_list {
+    margin-top: 60px;
+  }
+  #product .product_tab .prod_list ul li {
+    width: 50%;
+  }
+  #product .product_tab .prod_list label {
+    position: static;
+    border-bottom: 1px solid #444;
+  }
+  #product .product_tab .prod_list input:checked + label span {
+    border: none;
+  }
+  #product .product_tab .prod_list label span {
+    color: #000;
+  }
+  #product .product_tab .prod_list ul {
+    display: block;
+  }
+  #product .product_tab .prod_list .txt {
+    height: 30px;
+  }
+  #product .product_tab .prod_list .slogan {
+    height: 60px;
+  }
+}

@@ -1,0 +1,423 @@
+body {
+  position: relative;
+  background: #1d1d1b !important;
+}
+
+/* bg border */
+.bgborder div {
+  position: fixed;
+  z-index: 1000;
+  background-color: #fff;
+  transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1),
+    background 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.bgborder div:nth-child(1) {
+  width: 100%;
+  height: 20px;
+  top: 0;
+  left: 0;
+}
+
+.bgborder div:nth-child(2) {
+  width: 20px;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+.bgborder div:nth-child(3) {
+  width: 100%;
+  height: 20px;
+  bottom: 0;
+  left: 0;
+}
+
+.bgborder div:nth-child(4) {
+  width: 20px;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* Main header */
+.mainHeader {
+  position: fixed;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 120px;
+  padding: 24px 24px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: #1d1d1b;
+  z-index: 900;
+}
+.mainHeader .logo {
+  margin-left: 24px;
+}
+.mainHeader .logo a {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  font-size: 28px;
+  text-transform: capitalize;
+}
+
+
+/* Main nav icon */
+.iconWrap {
+  width: 34px;
+  height: 40px;
+  margin-right: 24px;
+  transition: all 0.3s ease;
+}
+.iconWrap:hover .icon1:before {
+  width: 100%;
+  background-color: #ffd94a;
+}
+.iconWrap:hover .icon2:before {
+  width: 100%;
+  background-color: #ffd94a;
+}
+.iconWrap:hover .icon3:before {
+  width: 100%;
+  background-color: #ffd94a;
+}
+.icon-box {
+  position: relative;
+}
+.icon1,
+.icon2,
+.icon3 {
+  position: relative;
+  width: 33px;
+  height: 4px;
+  background-color: #666;
+}
+.icon1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: top 300ms 300ms cubic-bezier(0.32, 1, 0.32, 1),
+    transform 300ms cubic-bezier(0.32, 1, 0.32, 1);
+}
+.icon1.animation {
+  top: 10px;
+  transform: rotate(-45deg);
+  transition: top 300ms cubic-bezier(0.32, 1, 0.32, 1),
+    transform 300ms 300ms cubic-bezier(0.32, 1, 0.32, 1);
+}
+.icon1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.icon2 {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  transition: all 0 300ms;
+}
+.icon2.animation {
+  display: none;
+}
+.icon2:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+.icon3 {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  transition: top 300ms 300ms cubic-bezier(0.32, 1, 0.32, 1),
+    transform 300ms cubic-bezier(0.32, 1, 0.32, 1);
+}
+.icon3.animation {
+  top: 10px;
+  transform: rotate(45deg);
+  transition: top 300ms cubic-bezier(0.32, 1, 0.32, 1),
+    transform 300ms 300ms cubic-bezier(0.32, 1, 0.32, 1);
+}
+.icon3:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transition: all 0.8s ease;
+}
+.iconWrap span {
+  overflow: hidden;
+  padding-top: 30px;
+}
+.text-box {
+  font-size: 12px;
+  color: #fff;
+  display: block;
+}
+.iconWrap span.icon_text {
+  display: block;
+  float: left;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+}
+
+/* nav */
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.9s ease;
+}
+#nav.zindex {
+  z-index: 100;
+}
+#nav .background {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+#nav .background > div {
+  float: left;
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100vh;
+  opacity: 0;
+  background: #000;
+}
+#nav .background .background1 {
+  left: 0%;
+}
+#nav .background .background2 {
+  left: 10%;
+}
+#nav .background .background3 {
+  left: 20%;
+}
+#nav .background .background4 {
+  left: 30%;
+}
+#nav .background .background5 {
+  left: 40%;
+}
+#nav .background .background6 {
+  left: 50%;
+}
+#nav .background .background7 {
+  left: 60%;
+}
+#nav .background .background8 {
+  left: 70%;
+}
+#nav .background .background9 {
+  left: 80%;
+}
+#nav .background .background10 {
+  left: 90%;
+}
+
+#nav .menu {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+#nav .menu li {
+  text-align: center;
+  overflow: hidden;
+}
+#nav .menu li a {
+  opacity: 0;
+  font-size: 70px;
+  line-height: 90px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  transform: translatey(30px);
+  padding: 0px;
+  overflow: hidden;
+}
+#nav .menu li a {
+  color: #fff;
+  display: inline-block;
+}
+#nav .menu li a:last-child {
+  margin-bottom: 0px;
+}
+#nav .menu li a::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 217, 74);
+  z-index: 99;
+  transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+}
+#nav .menu li a:hover::before {
+  left: 100%;
+}
+#nav .menu li a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  left: 100%;
+  width: 100%;
+  height: 4px;
+  background: rgb(255, 217, 74);
+  transition: all 0.3s;
+  transition-delay: 0.4s;
+}
+#nav .menu li a:hover::after {
+  left: 0%;
+}
+
+/* nav animation */
+#nav.active .background .background1 {
+  animation: one 0.45s 0.05s forwards;
+}
+#nav.active .background .background2 {
+  animation: one 0.45s 0.15s forwards;
+}
+#nav.active .background .background3 {
+  animation: one 0.45s 0.2s forwards;
+}
+#nav.active .background .background4 {
+  animation: one 0.45s 0.25s forwards;
+}
+#nav.active .background .background5 {
+  animation: one 0.45s 0.3s forwards;
+}
+#nav.active .background .background6 {
+  animation: one 0.45s 0.35s forwards;
+}
+#nav.active .background .background7 {
+  animation: one 0.45s 0.4s forwards;
+}
+#nav.active .background .background8 {
+  animation: one 0.45s 0.45s forwards;
+}
+#nav.active .background .background9 {
+  animation: one 0.45s 0.5s forwards;
+}
+#nav.active .background .background10 {
+  animation: one 0.45s 0.55s forwards;
+}
+#nav.active .menu li:nth-child(1) a {
+  animation: tone 0.85s 0.55s forwards ease-in-out;
+}
+#nav.active .menu li:nth-child(2) a {
+  animation: tone 0.85s 0.65s forwards ease-in-out;
+}
+#nav.active .menu li:nth-child(3) a {
+  animation: tone 0.85s 0.75s forwards ease-in-out;
+}
+#nav.active .menu li:nth-child(4) a {
+  animation: tone 0.85s 0.85s forwards ease-in-out;
+}
+
+#nav.notActive .menu li:nth-child(1) a {
+  animation: tone-reverse 0.85s 0.1s backwards ease-in-out;
+}
+#nav.notActive .menu li:nth-child(2) a {
+  animation: tone-reverse 0.85s 0.2s backwards ease-in-out;
+}
+#nav.notActive .menu li:nth-child(3) a {
+  animation: tone-reverse 0.85s 0.3s backwards ease-in-out;
+}
+#nav.notActive .menu li:nth-child(4) a {
+  animation: tone-reverse 0.85s 0.4s backwards ease-in-out;
+}
+#nav.notActive .background .background1 {
+  animation: one-reverse 0.45s 0.9s backwards;
+}
+#nav.notActive .background .background2 {
+  animation: one-reverse 0.45s 0.85s backwards;
+}
+#nav.notActive .background .background3 {
+  animation: one-reverse 0.45s 0.8s backwards;
+}
+#nav.notActive .background .background4 {
+  animation: one-reverse 0.45s 0.75s backwards;
+}
+#nav.notActive .background .background5 {
+  animation: one-reverse 0.45s 0.7s backwards;
+}
+#nav.notActive .background .background6 {
+  animation: one-reverse 0.45s 0.65s backwards;
+}
+#nav.notActive .background .background7 {
+  animation: one-reverse 0.45s 0.6s backwards;
+}
+#nav.notActive .background .background8 {
+  animation: one-reverse 0.45s 0.55s backwards;
+}
+#nav.notActive .background .background9 {
+  animation: one-reverse 0.45s 0.5s backwards;
+}
+#nav.notActive .background .background10 {
+  animation: one-reverse 0.45s 0.45s backwards;
+}
+
+@keyframes tone {
+  0% {
+    opacity: 0;
+    transform: translateY(180px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes tone-reverse {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(180px);
+  }
+}
+@keyframes one {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 10.1%;
+    opacity: 1;
+  }
+}
+@keyframes one-reverse {
+  0% {
+    width: 10.1%;
+    opacity: 1;
+  }
+  100% {
+    width: 0;
+    opacity: 0;
+  }
+}

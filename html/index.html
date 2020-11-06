@@ -1,24 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- style -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- font -->
+    <!-- font-family: 'Roboto', sans-serif; -->
+    <link rel="stylesheet" href="../assets/css/font-awesome.css" />
+    <link rel="stylesheet" href="../assets/css/animate.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,400,700,900"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Poppins', sans-serif; -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,700,900"
+      rel="stylesheet"
+    />
+
+    <!--[If IE 8]>
+    <script type="text/javascript">
+      alert("Please Upgrade Your BROWSER !");
+    </script>
+    <![endif]-->
+
     <title>Portfolio</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Features</a>
-          <a class="nav-item nav-link" href="#">Pricing</a>
-          <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    <div class="bgborder">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- Main header -->
+    <header class="mainHeader">
+      <div class="logo"><a href="#">Portfolio</a></div>
+      <div class="iconWrap">
+        <div class="icon-box">
+          <div class="icon1"></div>
+          <div class="icon2"></div>
+          <div class="icon3"></div>
         </div>
+        <span class="text-box"> MENU </span>
       </div>
+    </header>
+
+    <!-- Main nav -->
+    <nav id="nav">
+      <div class="background">
+        <div class="background1"></div>
+        <div class="background2"></div>
+        <div class="background3"></div>
+        <div class="background4"></div>
+        <div class="background5"></div>
+        <div class="background6"></div>
+        <div class="background7"></div>
+        <div class="background8"></div>
+        <div class="background9"></div>
+        <div class="background10"></div>
+      </div>
+      <ul class="menu">
+        <li>
+          <a href="#"><span>coding</span></a>
+        </li>
+        <li>
+          <a href="#"><span>animation</span></a>
+        </li>
+        <li>
+          <a href="#"><span>skills</span></a>
+        </li>
+        <li>
+          <a href="#"><span>about me</span></a>
+        </li>
+      </ul>
     </nav>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Require JavaScript -->
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script>
+      $(function () {
+        $(".iconWrap").click(animation);
+        function animation() {
+          if ($("#nav").hasClass("active")) {
+            $("#nav").removeClass("active");
+            $("#nav").addClass("notActive");
+            setTimeout(zi, 3000);
+          } else {
+            $("#nav").removeClass("notActive");
+            $("#nav").addClass("active");
+            $("#nav").addClass("zindex");
+          }
+        }
+        function zi() {
+          $("#nav").removeClass("zindex");
+        }
+      });
+    </script>
   </body>
 </html>
