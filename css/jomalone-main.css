@@ -129,6 +129,9 @@ section {
 #mainNav .navbar-brand img {
   height: 1.5rem;
 }
+#mainNav .navbar-nav .nav-item {
+  text-align: center;
+}
 #mainNav .navbar-nav .nav-item .nav-link {
   font-size: 0.95rem;
   color: #fff;
@@ -139,6 +142,7 @@ section {
   text-decoration: underline;
 }
 
+/* bx slider */
 #main_visual ul .visual_01 {
   position: relative;
   float: left;
@@ -180,14 +184,13 @@ section {
   font-family: "PT Sans", sans-serif;
   display: block;
   color: #fff;
-
   font-size: 68px;
   font-weight: 700;
 }
 #main_visual ul .txt .txt_02 {
   font-family: "Open Sans", sans-serif;
   display: block;
-  margin-top: 0.5%;
+  margin-top: 2.2%;
   color: #fff;
   font-size: 18px;
   line-height: 22px;
@@ -244,12 +247,9 @@ header nav ul li a:hover {
   transition: all 0.3s;
 }
 
-.page-section {
-  padding-top: 49.5em;
-}
-
 /* Product */
 #product {
+  padding-top: 49.5em;
   margin: 80px auto 160px;
 }
 #product .product_tab {
@@ -360,7 +360,7 @@ header nav ul li a:hover {
 
 /* Content */
 #contents {
-  margin: 0 auto 1px;
+  margin-bottom: 60px;
 }
 #contents .txt {
   display: block;
@@ -368,11 +368,11 @@ header nav ul li a:hover {
   top: 39%;
   width: 100%;
   padding-bottom: 10px;
-  color: #ebe1d3;
+  color: #fff;
   font-size: 18px;
-  font-family: "Work Sans", sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   text-align: center;
+  opacity: 0.7;
 }
 #contents .slogan {
   display: block;
@@ -382,7 +382,6 @@ header nav ul li a:hover {
   line-height: 36px;
   color: #fff;
   font-size: 25px;
-  font-family: "Work Sans", sans-serif;
   font-weight: 300;
   text-align: center;
 }
@@ -391,6 +390,7 @@ header nav ul li a:hover {
   overflow: hidden;
   float: left;
   width: 50%;
+  height: 400px;
 }
 
 #contents .item01:after {
@@ -414,9 +414,8 @@ header nav ul li a:hover {
 
 #contents .item01 a .bgImage {
   display: inline-block;
-  width: 100%;
   height: 400px;
-  background: url("../images/jomalone/jo-content-1.gif") no-repeat;
+  background: url("../images/jomalone/jo-contents-1.jpg") no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -424,6 +423,7 @@ header nav ul li a:hover {
 #contents .itemWrap {
   float: left;
   width: 50%;
+  height: 400px;
 }
 #contents .itemWrap .item03 {
   position: relative;
@@ -443,9 +443,8 @@ header nav ul li a:hover {
 
 #contents .itemWrap a .bgImage {
   display: inline-block;
-  width: 100%;
   height: 200px;
-  background: url("../images/jomalone/jo-content-2.jpg") no-repeat;
+  background: url("../images/jomalone/jo-contents-2.jpg") no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -465,9 +464,8 @@ header nav ul li a:hover {
 
 #contents .itemWrap .item04 a .bgImage {
   display: inline-block;
-  width: 100%;
   height: 200px;
-  background: url("../images/jomalone/jo-content-4.jpg") no-repeat;
+  background: url("../images/jomalone/jo-contents-3.jpg") no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -480,6 +478,86 @@ header nav ul li a:hover {
   transform: scale(1.2);
 }
 
+/* top button */
+#topButton {
+  display: none;
+  position: fixed;
+  right: 4%;
+  bottom: 50px;
+  z-index: 999;
+  width: 48px;
+  height: 48px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 8px 16px 24px -8px rgba(0, 0, 0, 0.32);
+  cursor: pointer;
+}
+#topButton img {
+  width: 100%;
+}
+/* footer */
+footer {
+  padding: 20px 0 50px;
+  border-top: solid 1px #d9d9d9;
+  text-align: center;
+}
+
+#ft_sns a {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin-right: 6px;
+}
+#ft_sns a:last-child {
+  margin-right: 0;
+}
+
+#ft_sns a img {
+  display: inline-block;
+  width: 100%;
+}
+#ft_cnt {
+  color: #666;
+  font-size: 14px;
+}
+
+#ft_cnt h1 a img {
+  margin: 43px auto 20px;
+  width: 164px;
+}
+#ft_cnt address {
+  padding-bottom: 6px;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+#ft_cnt em span {
+  position: relative;
+}
+#ft_cnt em span + span {
+  display: inline-block;
+  margin-left: 10px;
+  padding-bottom: 6px;
+}
+#ft_cnt em span:nth-child(1):after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -8px;
+  width: 1px;
+  height: 20px;
+}
+#ft_cnt em span:nth-child(2):after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -8px;
+  width: 1px;
+  height: 20px;
+}
+
+/* media screen max-width : 1024px */
 @media screen and (max-width: 1024px) {
   #product .product_tab .prod_list .txt {
     padding: 0 10px;
@@ -491,10 +569,11 @@ header nav ul li a:hover {
   }
 
   #contents .txt {
-    font-size: 1px;
+    font-weight: 500;
+    font-size: 14px;
   }
   #contents .slogan {
-    font-size: 22px;
+    font-size: 24px;
   }
 }
 
@@ -527,6 +606,7 @@ header nav ul li a:hover {
   #mainNav.navbar-shrink .navbar-brand img {
     height: 1.5rem;
   }
+
   #mainNav .navbar-nav .nav-item {
     margin-right: 1rem;
   }
@@ -535,9 +615,17 @@ header nav ul li a:hover {
   }
 }
 
+@media screen and (max-width: 992px) {
+  /* bx slider */
+  #main_visual ul .txt .txt_01 {
+    font-size: 54px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #contents .item01 {
     width: 100%;
+    height: 100%;
   }
   #contents .item01:after {
     top: auto;
@@ -547,6 +635,7 @@ header nav ul li a:hover {
   }
   #contents .itemWrap {
     width: 100%;
+    height: 100%;
   }
   #contents .itemWrap .item03 a .bgImage {
     height: 400px;
@@ -561,6 +650,21 @@ header nav ul li a:hover {
 }
 
 @media screen and (max-width: 640px) {
+  /* bx slider */
+  #main_visual ul .txt {
+    top: 45%;
+    width: 78%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #main_visual ul .txt .txt_01 {
+    font-size: 48px;
+  }
+  #main_visual ul .txt .txt_02 {
+    margin-top: 2.4%;
+  }
+
   #product {
     margin-bottom: 80px;
   }
@@ -588,5 +692,22 @@ header nav ul li a:hover {
   }
   #product .product_tab .prod_list .slogan {
     height: 60px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #main_visual ul .txt {
+    top: 40%;
+  }
+
+  #main_visual ul .txt .txt_02 {
+    margin-top: 9.4%;
+  }
+
+  #product .product_tab .prod_list label {
+    transform: none;
+  }
+  #product .product_tab .prod_list .txt {
+    height: 45px;
   }
 }

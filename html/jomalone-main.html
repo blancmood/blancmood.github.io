@@ -22,7 +22,6 @@
     />
 
     <!-- font -->
-    <!-- font-family: 'Roboto', sans-serif; -->
     <link rel="stylesheet" href="../assets/css/font-awesome.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap"
@@ -62,20 +61,14 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ml-auto">
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#product"
-                  >Product</a
-                >
+                <a class="nav-link js-scroll-trigger" href="#product">
+                  Product
+                </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#contents">
                   Content
                 </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#team">Team</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#contact">
@@ -123,7 +116,7 @@
       </header>
 
       <!-- Product -->
-      <section class="page-section" id="product">
+      <section id="product">
         <div class="inner">
           <div class="product_tab">
             <div class="prod_list">
@@ -246,19 +239,59 @@
         </div>
       </section>
 
-      <!-- 상단으로 가기 -->
-      <div class="totop d-none">
-        <a href="javascript:;" class="ring">TOP<span></span></a>
+      <footer id="contact">
+        <div id="ft_sns">
+          <a href="https://www.facebook.com/JoMaloneLondon/" target="_blank">
+            <img src="../images/common/icon-facebook.svg" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com/jomalonelondon/" target="_blank">
+            <img src="../images/common/icon-instagram.svg" alt="Instagram" />
+          </a>
+          <a href="https://twitter.com/JoMaloneLondon/" target="_blank">
+            <img src="../images/common/icon-twitter.png" alt="Twitter" />
+          </a>
+          <a
+            href="https://www.youtube.com/user/JoMaloneLondon2012"
+            target="_blank"
+          >
+            <img src="../images/common/icon-youtube.svg" alt="Youtube" />
+          </a>
+        </div>
+        <div id="ft_cnt">
+          <h1>
+            <a>
+              <img
+                src="../images/jomalone/jo-logo-style-3.png"
+                alt="Jomalone"
+              />
+            </a>
+          </h1>
+          <address>
+            Trust Tower, 60 Mabang-Ro, Seocho-Ku, Seoul 06775, Korea
+          </address>
+          <em>
+            <span>Tel. +82-2-589-000</span>
+            <span>Fax. +82-2-589-1688</span>
+            <span>E-mail. infojm@jomalone.co.uk</span>
+          </em>
+          <p>Copyright(c) Jo Malone London 2020</p>
+        </div>
+      </footer>
+
+      <!-- to Top -->
+      <div id="topButton">
+        <img src="../images/common/icon-arrow-top.svg" id="to Top" />
       </div>
     </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
+    <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+    <!-- <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -271,20 +304,8 @@
     ></script>
 
     <!-- Require JavaScript -->
-    <script type="text/javascript" src="../js/index.js"></script>
-    <script type="text/javascript" src="../js/jquery.bxslider.js"></script>
     <script type="text/javascript" src="../js/jomalone-main.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $(".bxslider").bxSlider({
-          auto: true,
-          autoControls: true,
-          stopAutoOnClick: true,
-          pager: false,
-          infiniteLoop: true,
-          touchEnabled: false,
-        });
-      });
-    </script>
+    <script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+    <script type="text/javascript"></script>
   </body>
 </html>
